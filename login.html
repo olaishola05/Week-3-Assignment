@@ -3,12 +3,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
     <title>Login to your account</title>
   </head>
   <body>
-    <div class="container">
-      <div class="image"><img src="img/teamwork.png" alt="" srcset="" /></div>
-      <div class="login"></div>
+    <div class="main-container">
+      <div class="image">
+        <img src="img/remote.png" alt="team working together" />
+      </div>
+      <div class="login">
+        <form action="">
+          <div class="imageContainer">
+            <img src="img/collab1.png" alt="avatar" class="dp-image" />
+          </div>
+          <div class="container">
+            <label><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+
+            <label><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked" /> Remember me
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
