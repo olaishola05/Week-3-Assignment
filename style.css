@@ -5,7 +5,10 @@
 body {
   margin: 0;
 }
-
+a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1rem;
+}
 ul.navBar {
   list-style-type: none;
   margin: 0;
@@ -30,9 +33,21 @@ ul.navBar li a:hover:not(.active) {
 ul.navBar li a.active {
   background-color: #333;
 }
-img {
-  width: 100%;
+
+ul.navBar li.right {
+  float: right;
 }
+
+/* responsive navbar */
+
+@media screen and (max-width: 600px) {
+  ul.navBar li,
+  ul.navBar li.right {
+    float: none;
+  }
+}
+
+/* top section */
 .top-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/collab2.png");
@@ -69,11 +84,13 @@ img {
   position: absolute;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 150%);
   border: 2px solid #44c99c;
+  transition-duration: 0.4s;
 }
 
 .btn:hover {
   background-color: #44c99c;
   color: white;
+  font-weight: bold;
 }
