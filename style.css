@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+
+ul.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #44c99c;
+}
+ul.navBar li {
+  float: left;
+}
+
+ul.navBar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.navBar li a:hover:not(.active) {
+  background-color: #111;
+}
+ul.navBar li a.active {
+  background-color: #333;
+}
+img {
+  width: 100%;
+}
+.top-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/collab2.png");
+  background-repeat: no-repeat;
+  background-color: #f4f9fb;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.top-section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  color: white;
+  text-align: center;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #44c99c;
+}
+
+.btn:hover {
+  background-color: #44c99c;
+  color: white;
+}
