@@ -30,12 +30,13 @@ ul.navBar li a {
 ul.navBar li a:hover:not(.active) {
   background-color: #111;
 }
-ul.navBar li a.active {
-  background-color: #333;
-}
 
 ul.navBar li.right {
   float: right;
+}
+
+button a {
+  text-decoration: none;
 }
 
 /* responsive navbar */
