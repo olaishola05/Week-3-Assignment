@@ -43,7 +43,7 @@ button a {
 
 @media screen and (max-width: 600px) {
   ul.navBar li,
-  ul.navBar li.right {
+  ul.navBar li.rights {
     float: none;
   }
 }
