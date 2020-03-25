@@ -1,67 +1,58 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="login.css" />
-    <title>Login to your account</title>
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="image">
-        <img src="img/remote.png" alt="team working together" />
-      </div>
-      <div class="login">
-        <form name="details" action="#">
-          <div class="imageContainer">
-            <h1>Login</h1>
-          </div>
-          <div class="container">
-            <label for="fname"><b>FullName:</b></label>
-            <input
-              type="text"
-              placeholder="Enter Your Name"
-              name="fullname"
-              id="fname"
-            />
-
-            <label for="empID"><b> Employee ID:</b></label>
-            <input
-              type="text"
-              name="empID"
-              id="employee"
-              placeholder="enter ID"
-            />
-
-            <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" />
-
-            <label for="branch"><b>Select Branch:</b></label>
-            <select name="branch" id="branch">
-              <option value="default">Select branch</option>
-              <option value="dubai">Dubai</option>
-              <option value="maroc">Morocco</option>
-              <option value="niger">Niger</option>
-              <option value="ghana">Ghana</option>
-              <option value="nigeria">Nigeria</option>
-            </select>
-
-            <label for="position"><b>Position:</b></label>
-            <select name="position" id="postn">
-              <option value="staff">Staffs</option>
-              <option value="manager">Manager</option>
-            </select>
-
-            <button type="submit" id="form-btn">Login</button>
-            <input type="checkbox" checked="checked" /> Remember me
-            <div class="container-down" style="background-color:#f1f1f1">
-              <button type="button" class="cancelbtn">Cancel</button>
-              <span class="psw">Forgot <a href="#">password?</a></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="login.css" />
+        <title>Login to your account</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="image">
+                <img src="img/remote.png" alt="team working together" />
             </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
+            <div class="login">
+                <form name="details" onsubmit="validateSelect(this)">
+                    <div class="imageContainer">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="container">
+                        <label for="fname"><b>FullName:</b></label>
+                        <input type="text" placeholder="Enter Your Name" name="fullname" id="fname" />
+
+                        <label for="empID"><b> Employee ID:</b></label>
+                        <input type="text" name="empID" id="employee" placeholder="enter ID" />
+
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" id="userPass" />
+
+                        <label for="branch"><b>Select Branch:</b></label>
+                        <select name="branch" id="branch">
+                            <option value="" id="defaultOption">Select branch</option>
+                            <option value="dubai">Dubai</option>
+                            <option value="maroc">Morocco</option>
+                            <option value="niger">Niger</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="nigeria">Nigeria</option>
+                        </select>
+
+                        <label for="position"><b>Position:</b></label>
+                        <select name="position" id="position">
+                            <option value="">Select Position</option>
+                            <option value="staff">Staffs</option>
+                            <option value="manager">Manager</option>
+                        </select>
+
+                        <button type="submit" id="form-btn">Login</button>
+                        <input type="checkbox" checked="checked" /> Remember me
+                        <div class="container-down" style="background-color:#f1f1f1">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>
